@@ -10,10 +10,30 @@ public class PageController
 {
 	
 	     @GetMapping(value= {"/","/home","/index"})
-         public ModelAndView page()
+         public ModelAndView home()
          {
         	 ModelAndView model=new ModelAndView("page");
-        	 model.addObject("greeting","welcome to spring mvc");
+        	 model.addObject("title","home");
+        	 model.addObject("userClicksHome", true);
         	 return model;
          }
+	      
+	     @GetMapping(value="/about")
+	     public  ModelAndView about()
+	     {
+	    	 ModelAndView model=new ModelAndView("page");
+        	 model.addObject("title","about");
+        	 model.addObject("userClicksAbout", true);
+        	 return model;
+	     }
+	     
+	     @GetMapping(value="/contact")
+	     public ModelAndView contactUs()
+	     {
+	    	 ModelAndView model=new ModelAndView("page");
+	    	 model.addObject("title","Contact Us");
+	    	 model.addObject("userClicksContactUs", true);
+	    	 return model;
+	     }
+	     
 }

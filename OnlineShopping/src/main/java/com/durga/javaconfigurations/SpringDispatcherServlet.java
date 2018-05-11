@@ -26,6 +26,6 @@ public class SpringDispatcherServlet extends WebMvcConfigurerAdapter
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		// TODO Auto-generated method stub
-		registry.addResourceHandler("/resources/**").addResourceLocations("/assets/");
+		registry.addResourceHandler("/resources/**/").addResourceLocations("/assets/");
 	}
 }

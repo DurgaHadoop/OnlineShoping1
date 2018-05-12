@@ -1,12 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
+
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="${contextRoot}/home">Online Shopping</a>
@@ -25,8 +20,8 @@
              
               </a>
             </li>
-            <li class="nav-item" id="viweProduct">
-              <a class="nav-link" href="${contextRoot}/listProducts">View Products
+            <li class="nav-item" id="viewProduct">
+              <a class="nav-link" href="${contextRoot}/show/all/products">View Products
              
               </a>
             </li>
@@ -40,5 +35,3 @@
       </div>
     </nav>
       
-</body>
-</html>

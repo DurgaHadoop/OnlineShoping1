@@ -28,6 +28,7 @@
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -44,6 +45,9 @@
 			</c:if>
 			<c:if test="${userClicksContactUs == true}">
 				<%@include file="./contact.jsp"%>
+			</c:if>
+			<c:if test="${userClicksAllProducts == true or userClicksCategoryProducts==true}">
+				<%@include file="./listproduct.jsp"%>
 			</c:if>
 		</div>
 		<!-- Footer -->

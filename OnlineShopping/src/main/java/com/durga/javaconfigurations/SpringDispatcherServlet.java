@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages= {"com.durga.controller"})
+@ComponentScan(basePackages= {"com.durga.controller","com.durga.shoppingbakent.dtoimpl"})
 public class SpringDispatcherServlet extends WebMvcConfigurerAdapter
 {
 	@Bean
